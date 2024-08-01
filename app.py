@@ -1,6 +1,13 @@
-import time
+# app.py
+import http.server
+import socketserver
 
-while True:
-    print("Hello World")
-    time.sleep(5)  # Sleep for 5 seconds to avoid spamming
+PORT = 80
+
+Handler = http.server.SimpleHTTPRequestHandler
+
+with socketserver.TCPServer(("", PORT), Handler) as httpd:
+    print("Serving at port", PORT)
+    httpd.serve_forever()
+
 
