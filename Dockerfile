@@ -12,6 +12,9 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 # Set environment variables
 ENV NAME World
 
+# Install Flask
+RUN pip3 install Flask
+
 # Expose the port your application will run on
 EXPOSE 80
 
