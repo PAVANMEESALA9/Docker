@@ -16,7 +16,7 @@ ENV NAME World
 RUN pip3 install Flask
 
 # Expose the port your application will run on
-EXPOSE 80
+EXPOSE 8080
 
 # Run a command to start the application
 CMD ["python3", "app.py"]
