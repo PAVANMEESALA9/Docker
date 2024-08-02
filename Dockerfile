@@ -20,4 +20,4 @@ ENV NAME World
 EXPOSE 8080
 
 # Run a command to start the application
-CMD ["python", "app.py"]
+CMD ["python3", "app.py"]
